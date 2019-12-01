@@ -70,7 +70,7 @@ async function exportDiagramAndKeyToPNG(filename, path, page, generateKey) {
   const diagramKeyFilename = filename + '-key.png';
 
   const base64DataForDiagram = await page.evaluate(() => {
-    return structurizr.scripting.exportCurrentDiagramToPNG({crop: false});
+    return structurizr.scripting.exportCurrentDiagramToPNG({crop: true});
   });
 
   await fs.promises.mkdir(`out/${path}`, { recursive: true });
