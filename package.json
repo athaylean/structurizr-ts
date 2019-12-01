@@ -1,0 +1,22 @@
+{
+  "name": "structurizr-ts",
+  "description": "TypeScript structurizr implementation via puppeteer",
+  "author": "Alan Cesarski",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "license": "MIT",
+  "dependencies": {
+    "ts-node": "^8.4.1",
+    "typescript": "^3.6.4"
+  },
+  "devDependencies": {
+    "@types/node": "^12.12.3"
+  },
+  "peerDependencies": {
+    "puppeteer": "^2.0.0"
+  },
+  "scripts": {
+    "prepublish": "tsc"
+  }
+}
